@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-AccountMgt" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AccountMgt"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AccountMgt" destdir="${build.generated.dir}/jax-wsCache/AccountMgt" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/AccountMgt/wsdl/localhost_8080/AccountMgt/AccountMgt.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AccountMgt/AccountMgt?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/AccountMgt/wsdl/localhost_8080/AccountMgt/AccountMgt.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AccountMgt"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AccountMgt">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AccountMgt" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/AccountMgt"/>
+    </target>
+    <target name="wsimport-client-EnquiryWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/EnquiryWebService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/EnquiryWebService" destdir="${build.generated.dir}/jax-wsCache/EnquiryWebService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/EnquiryWebService/wsdl/localhost_8080/EnquiryWebService/EnquiryWebService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/EnquiryWebService/EnquiryWebService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/EnquiryWebService/wsdl/localhost_8080/EnquiryWebService/EnquiryWebService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/EnquiryWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/EnquiryWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-EnquiryWebService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/EnquiryWebService"/>
+    </target>
+    <target name="wsimport-client-EnquiryMgtWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS" destdir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/EnquiryMgtWS/wsdl/localhost_8080/EnquiryMgtWS/EnquiryMgtWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/EnquiryMgtWS/EnquiryMgtWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/EnquiryMgtWS/wsdl/localhost_8080/EnquiryMgtWS/EnquiryMgtWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-EnquiryMgtWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/EnquiryMgtWS"/>
+    </target>
+    <target name="wsimport-client-CatelogueMgtWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS" destdir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/CatelogueMgtWS/wsdl/localhost_8080/CatelogueMgtWS/CatelogueMgtWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CatelogueMgtWS/CatelogueMgtWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/CatelogueMgtWS/wsdl/localhost_8080/CatelogueMgtWS/CatelogueMgtWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CatelogueMgtWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/CatelogueMgtWS"/>
+    </target>
+    <target name="wsimport-client-ProductMgtWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ProductMgtWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ProductMgtWS" destdir="${build.generated.dir}/jax-wsCache/ProductMgtWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ProductMgtWS/wsdl/localhost_8080/ProductMgtWS/ProductMgtWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ProductMgtWS/ProductMgtWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ProductMgtWS/wsdl/localhost_8080/ProductMgtWS/ProductMgtWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ProductMgtWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ProductMgtWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ProductMgtWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ProductMgtWS"/>
+    </target>
+    <target name="wsimport-client-PurchaseMgtWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS" destdir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/PurchaseMgtWS/wsdl/localhost_8080/PurchaseMgtWS/PurchaseMgtWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PurchaseMgtWS/PurchaseMgtWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/PurchaseMgtWS/wsdl/localhost_8080/PurchaseMgtWS/PurchaseMgtWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PurchaseMgtWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/PurchaseMgtWS"/>
+    </target>
+    <target name="wsimport-client-AdditionalFeatureWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS" destdir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/AdditionalFeatureWS/wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AdditionalFeatureWS/AdditionalFeatureWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/AdditionalFeatureWS/wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AdditionalFeatureWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-AccountMgt, wsimport-client-EnquiryWebService, wsimport-client-EnquiryMgtWS, wsimport-client-CatelogueMgtWS, wsimport-client-ProductMgtWS, wsimport-client-PurchaseMgtWS, wsimport-client-AdditionalFeatureWS"/>
+</project>

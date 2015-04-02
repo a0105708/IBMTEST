@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebApplication1/NewWebService?WSDL" uri="wsdl/localhost_8080/WebApplication1/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication1/NewWebService?xsd=1" uri="wsdl/localhost_8080/WebApplication1/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TestWebService/TestWebService?wsdl" uri="wsdl/localhost_8080/TestWebService/TestWebService.wsdl"/>
+    <system systemId="http://localhost:8080/TestWebService/TestWebService?xsd=1" uri="wsdl/localhost_8080/TestWebService/TestWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TestWebService/TestWebService?WSDL" uri="wsdl/localhost_8080/TestWebService/TestWebService.wsdl"/>
+    <system systemId="http://localhost:8080/AccountMgtWS/AccountMgtWS?WSDL" uri="wsdl/localhost_8080/AccountMgtWS/AccountMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/AccountMgtWS/AccountMgtWS?xsd=1" uri="wsdl/localhost_8080/AccountMgtWS/AccountMgtWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ProductMgtWS/ProductMgtWS?WSDL" uri="wsdl/localhost_8080/ProductMgtWS/ProductMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/ProductMgtWS/ProductMgtWS?xsd=1" uri="wsdl/localhost_8080/ProductMgtWS/ProductMgtWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CatelogueMgtWS/CatelogueMgtWS?WSDL" uri="wsdl/localhost_8080/CatelogueMgtWS/CatelogueMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/CatelogueMgtWS/CatelogueMgtWS?xsd=1" uri="wsdl/localhost_8080/CatelogueMgtWS/CatelogueMgtWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AccountMgt/AccountMgt?WSDL" uri="wsdl/localhost_8080/AccountMgt/AccountMgt.wsdl"/>
+    <system systemId="http://localhost:8080/AccountMgt/AccountMgt?xsd=1" uri="wsdl/localhost_8080/AccountMgt/AccountMgt.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EnquiryWebService/EnquiryWebService?WSDL" uri="wsdl/localhost_8080/EnquiryWebService/EnquiryWebService.wsdl"/>
+    <system systemId="http://localhost:8080/EnquiryWebService/EnquiryWebService?xsd=1" uri="wsdl/localhost_8080/EnquiryWebService/EnquiryWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EnquiryMgtWS/EnquiryMgtWS?WSDL" uri="wsdl/localhost_8080/EnquiryMgtWS/EnquiryMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/EnquiryMgtWS/EnquiryMgtWS?xsd=1" uri="wsdl/localhost_8080/EnquiryMgtWS/EnquiryMgtWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CatelogueMgtWS/CatelogueMgtWS?wsdl" uri="wsdl/localhost_8080/CatelogueMgtWS/CatelogueMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/ProductMgtWS/ProductMgtWS?wsdl" uri="wsdl/localhost_8080/ProductMgtWS/ProductMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/PurchaseMgtWS/PurchaseMgtWS?wsdl" uri="wsdl/localhost_8080/PurchaseMgtWS/PurchaseMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/PurchaseMgtWS/PurchaseMgtWS?xsd=1" uri="wsdl/localhost_8080/PurchaseMgtWS/PurchaseMgtWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AdditionalFeatureWS/AdditionalFeatureWS?wsdl" uri="wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.wsdl"/>
+    <system systemId="http://localhost:8080/AdditionalFeatureWS/AdditionalFeatureWS?xsd=1" uri="wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.xsd_1.xsd"/>
+</catalog>

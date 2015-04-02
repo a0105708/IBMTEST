@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSS/">
+
+<xs:element name="addItems" type="tns:addItems"/>
+
+<xs:element name="addPaymentInfo" type="tns:addPaymentInfo"/>
+
+<xs:element name="addPaymentInfoResponse" type="tns:addPaymentInfoResponse"/>
+
+<xs:element name="checkOutItem" type="tns:checkOutItem"/>
+
+<xs:element name="checkOutItemResponse" type="tns:checkOutItemResponse"/>
+
+<xs:element name="payShoppingCart" type="tns:payShoppingCart"/>
+
+<xs:element name="removeItemFromCart" type="tns:removeItemFromCart"/>
+
+<xs:element name="viewOrderById" type="tns:viewOrderById"/>
+
+<xs:element name="viewOrderByIdResponse" type="tns:viewOrderByIdResponse"/>
+
+<xs:element name="viewPurchaseHistory" type="tns:viewPurchaseHistory"/>
+
+<xs:element name="viewPurchaseHistoryResponse" type="tns:viewPurchaseHistoryResponse"/>
+
+<xs:element name="viewShoppingCart" type="tns:viewShoppingCart"/>
+
+<xs:element name="viewShoppingCartResponse" type="tns:viewShoppingCartResponse"/>
+
+<xs:complexType name="viewOrderById">
+<xs:sequence>
+<xs:element name="OrderId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewOrderByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:orderEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orderEntity">
+<xs:sequence>
+<xs:element name="date" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+<xs:element name="purchaseId" type="xs:long" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkOutItem">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkOutItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewPurchaseHistory">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewPurchaseHistoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:purchaseEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchaseEntity">
+<xs:sequence>
+<xs:element name="accounId" type="xs:long" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="orderId" type="xs:long" minOccurs="0"/>
+<xs:element name="purchasedDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int" minOccurs="0"/>
+<xs:element name="status" type="xs:boolean"/>
+<xs:element name="totalPrice" type="xs:double" minOccurs="0"/>
+<xs:element name="transactionId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addItems">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeItemFromCart">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewShoppingCart">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewShoppingCartResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:orderEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="payShoppingCart">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="transId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPaymentInfo">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="creditCard" type="xs:string" minOccurs="0"/>
+<xs:element name="totalPrice" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPaymentInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="TestWebService">
+      <implementation-class>WSS.TestWebService</implementation-class>
+    </service>
+    <service name="AccountMgtWS">
+      <implementation-class>WSS.AccountMgtWS</implementation-class>
+    </service>
+    <service name="ProductMgtWS">
+      <implementation-class>WSS.ProductMgtWS</implementation-class>
+    </service>
+    <service name="EnquiryMgtWS">
+      <implementation-class>WSS.EnquiryMgtWS</implementation-class>
+    </service>
+    <service name="EnquiryWebService">
+      <implementation-class>WSS.EnquiryWebService</implementation-class>
+    </service>
+    <service name="AccountMgt">
+      <implementation-class>WSS.AccountMgt</implementation-class>
+    </service>
+    <service name="CatelogueMgtWS">
+      <implementation-class>WSS.CatelogueMgtWS</implementation-class>
+    </service>
+    <service name="PurchaseMgtWS">
+      <implementation-class>WSS.PurchaseMgtWS</implementation-class>
+    </service>
+    <service name="AdditionalFeatureWS">
+      <implementation-class>WSS.AdditionalFeatureWS</implementation-class>
+    </service>
+  </services>
+  <clients>
+  </clients>
+  <jsr109>false</jsr109>
+</jax-ws>

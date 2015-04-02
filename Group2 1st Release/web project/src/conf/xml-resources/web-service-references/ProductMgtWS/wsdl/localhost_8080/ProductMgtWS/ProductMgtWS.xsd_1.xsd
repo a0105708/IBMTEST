@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSS/">
+
+<xs:element name="AccountNotFoundException" type="tns:AccountNotFoundException"/>
+
+<xs:element name="CommentNotFoundException" type="tns:CommentNotFoundException"/>
+
+<xs:element name="ProductNotFoundException" type="tns:ProductNotFoundException"/>
+
+<xs:element name="rateProduct" type="tns:rateProduct"/>
+
+<xs:element name="rateProductResponse" type="tns:rateProductResponse"/>
+
+<xs:element name="removeComment" type="tns:removeComment"/>
+
+<xs:element name="removeCommentResponse" type="tns:removeCommentResponse"/>
+
+<xs:element name="searchProduct" type="tns:searchProduct"/>
+
+<xs:element name="searchProductResponse" type="tns:searchProductResponse"/>
+
+<xs:element name="searchProduct_1" type="tns:searchProduct_1"/>
+
+<xs:element name="searchProduct_1Response" type="tns:searchProduct_1Response"/>
+
+<xs:element name="viewAllCommentsFromAccount" type="tns:viewAllCommentsFromAccount"/>
+
+<xs:element name="viewAllCommentsFromAccountResponse" type="tns:viewAllCommentsFromAccountResponse"/>
+
+<xs:element name="viewAllCommentsOfProduct" type="tns:viewAllCommentsOfProduct"/>
+
+<xs:element name="viewAllCommentsOfProductResponse" type="tns:viewAllCommentsOfProductResponse"/>
+
+<xs:complexType name="rateProduct">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+<xs:element name="rating" type="xs:double" minOccurs="0"/>
+<xs:element name="content" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rateProductResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="AccountNotFoundException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ProductNotFoundException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProduct_1">
+<xs:sequence>
+<xs:element name="wineryName" type="xs:string" minOccurs="0"/>
+<xs:element name="regionName" type="xs:string" minOccurs="0"/>
+<xs:element name="cateName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProduct_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:itemEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="itemEntity">
+<xs:sequence>
+<xs:element name="category" type="tns:categoryEntity" minOccurs="0"/>
+<xs:element name="commentList" type="tns:commentEntity" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="expiringDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="itemName" type="xs:string" minOccurs="0"/>
+<xs:element name="itemPurchased" type="tns:itemPurchasedEntity" minOccurs="0"/>
+<xs:element name="region" type="tns:regionEntity" minOccurs="0"/>
+<xs:element name="tastingNote" type="xs:string" minOccurs="0"/>
+<xs:element name="vitage" type="xs:string" minOccurs="0"/>
+<xs:element name="winery" type="tns:wineryEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="categoryEntity">
+<xs:sequence>
+<xs:element name="categoryName" type="xs:string" minOccurs="0"/>
+<xs:element name="categorySpec" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commentEntity">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+<xs:element name="contents" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+<xs:element name="rating" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="itemPurchasedEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="item" type="tns:itemEntity" minOccurs="0"/>
+<xs:element name="soldQuantity" type="xs:long" minOccurs="0"/>
+<xs:element name="totalPrice" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="regionEntity">
+<xs:sequence>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="regionName" type="xs:string" minOccurs="0"/>
+<xs:element name="regionSpec" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wineryEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="wineryAddress" type="xs:string" minOccurs="0"/>
+<xs:element name="wineryContact" type="xs:string" minOccurs="0"/>
+<xs:element name="wineryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProduct">
+<xs:sequence>
+<xs:element name="itemName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProductResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewAllCommentsFromAccount">
+<xs:sequence>
+<xs:element name="accountId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewAllCommentsFromAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:commentEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeComment">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeCommentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CommentNotFoundException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewAllCommentsOfProduct">
+<xs:sequence>
+<xs:element name="itemId" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewAllCommentsOfProductResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:commentEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

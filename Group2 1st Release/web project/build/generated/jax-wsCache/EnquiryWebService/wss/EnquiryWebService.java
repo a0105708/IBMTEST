@@ -71,8 +71,8 @@ public interface EnquiryWebService {
      * @param enquiryId
      * @return
      *     returns wss.EnquiryEntity
-     * @throws AdminNotFoundException_Exception
      * @throws EnquiryNotFoundException_Exception
+     * @throws AdminNotFoundException_Exception
      */
     @WebMethod
     @WebResult(targetNamespace = "")
@@ -95,8 +95,8 @@ public interface EnquiryWebService {
      * @param adminId
      * @param enquiryId
      * @param replyContent
-     * @throws AdminNotFoundException_Exception
      * @throws EnquiryNotFoundException_Exception
+     * @throws AdminNotFoundException_Exception
      */
     @WebMethod
     @RequestWrapper(localName = "processEnquiry", targetNamespace = "http://WSS/", className = "wss.ProcessEnquiry")

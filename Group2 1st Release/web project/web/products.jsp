@@ -463,7 +463,7 @@ System.out.println("jsp 1:");
 
                                          <h2>Product Name: <%=itemName%></h2>
 
-                                         <h2>Price: <%=tasting%></h2>
+                                         <h2>Price: S$ <%=tasting%></h2>
 
                                          <h2>Vintage: <%=vitage%></h2>
                                          

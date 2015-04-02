@@ -73,8 +73,8 @@ public interface ProductMgtWS {
      * @param itemId
      * @param rating
      * @param content
-     * @throws ProductNotFoundException_Exception
      * @throws AccountNotFoundException_Exception
+     * @throws ProductNotFoundException_Exception
      */
     @WebMethod
     @RequestWrapper(localName = "rateProduct", targetNamespace = "http://WSS/", className = "wss.RateProduct")

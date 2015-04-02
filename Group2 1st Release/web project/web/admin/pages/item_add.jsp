@@ -34,7 +34,7 @@
                                     <input name="name" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Price</label>
+                                    <label>Price S$</label>
                                     <input name="tastingNote" class="form-control">
                                 </div>
                                 <div class="form-group">

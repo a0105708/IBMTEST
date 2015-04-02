@@ -227,7 +227,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <br>
             <%} catch (Exception ex) {
-	out.println("Sorry, No item in your cart now!");
+	out.println("Sorry, No item in your cart now!"+ ex);
     }
     %>
     <%-- end web service invocation --%><hr/>

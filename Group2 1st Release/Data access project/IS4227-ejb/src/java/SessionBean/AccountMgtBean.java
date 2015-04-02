@@ -81,7 +81,7 @@ public class AccountMgtBean {
             sc.setCheckout(false);
             accountEntity.setShoppingcartId(sc.getId());
             em.persist(sc);
-                           
+            
             em.persist(accountEntity);
             EmailManager emailManager=new EmailManager();
             emailManager.emailActivationCode(name, email, activationCode);

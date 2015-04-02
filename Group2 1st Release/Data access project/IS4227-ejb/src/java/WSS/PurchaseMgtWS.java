@@ -34,7 +34,7 @@ public class PurchaseMgtWS {
     }
 
     @WebMethod(operationName = "viewShoppingCart")
-    public List<OrderEntity> viewShoppingCart(@WebParam(name = "accountId") Long accountId) {
+    public List<OrderEntity> viewShoppingCart(@WebParam(name = "accountId") Long accountId) {     
         return ejbRef.viewShoppingCart(accountId);
     }
 

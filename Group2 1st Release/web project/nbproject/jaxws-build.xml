@@ -138,5 +138,21 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
         <delete dir="${build.generated.dir}/jax-wsCache/AdditionalFeatureWS"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-AccountMgt, wsimport-client-EnquiryWebService, wsimport-client-EnquiryMgtWS, wsimport-client-CatelogueMgtWS, wsimport-client-ProductMgtWS, wsimport-client-PurchaseMgtWS, wsimport-client-AdditionalFeatureWS"/>
+    <target name="wsimport-client-ReportMgtWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ReportMgtWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ReportMgtWS" destdir="${build.generated.dir}/jax-wsCache/ReportMgtWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ReportMgtWS/wsdl/localhost_8080/ReportMgtWS/ReportMgtWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ReportMgtWS/ReportMgtWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ReportMgtWS/wsdl/localhost_8080/ReportMgtWS/ReportMgtWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ReportMgtWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ReportMgtWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ReportMgtWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/wss"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ReportMgtWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-AccountMgt, wsimport-client-EnquiryWebService, wsimport-client-EnquiryMgtWS, wsimport-client-CatelogueMgtWS, wsimport-client-ProductMgtWS, wsimport-client-PurchaseMgtWS, wsimport-client-AdditionalFeatureWS, wsimport-client-ReportMgtWS"/>
 </project>

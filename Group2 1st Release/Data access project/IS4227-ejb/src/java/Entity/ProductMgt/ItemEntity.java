@@ -33,6 +33,7 @@ public class ItemEntity implements Serializable {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Calendar expiringDate;
     private String tastingNote; //treat as price!!!!
+    private Double cost;
     
     @ManyToOne
     private CategoryEntity category;
@@ -61,6 +62,7 @@ public class ItemEntity implements Serializable {
         this.category = category;
         this.region = region;
         this.winery = winery;
+        this.cost=20D;
     }
    
     public void setCommentList(List<CommentEntity> commentList) {
@@ -193,5 +195,14 @@ public class ItemEntity implements Serializable {
     public void setCategory(CategoryEntity category) {
         this.category = category;
     }
-    
+
+    public Double getCost() {
+        return cost;
+    }
+
+    public void setCost(Double cost) {
+        this.cost = cost;
+    }
+
+
 }

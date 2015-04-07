@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSS/">
+
+<xs:element name="createMonthlyReport" type="tns:createMonthlyReport"/>
+
+<xs:element name="createProductReport" type="tns:createProductReport"/>
+
+<xs:element name="listReport" type="tns:listReport"/>
+
+<xs:element name="listReportResponse" type="tns:listReportResponse"/>
+
+<xs:complexType name="createMonthlyReport">
+<xs:sequence>
+<xs:element name="startYear" type="xs:int" minOccurs="0"/>
+<xs:element name="startMonth" type="xs:int" minOccurs="0"/>
+<xs:element name="endYear" type="xs:int" minOccurs="0"/>
+<xs:element name="endMonth" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listReport">
+<xs:sequence>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listReportResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportEntity">
+<xs:sequence>
+<xs:element name="generatedTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="reportName" type="xs:string" minOccurs="0"/>
+<xs:element name="reportType" type="xs:string" minOccurs="0"/>
+<xs:element name="url" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createProductReport">
+<xs:sequence>
+<xs:element name="productId" type="xs:long"/>
+<xs:element name="startYear" type="xs:int" minOccurs="0"/>
+<xs:element name="startMonth" type="xs:int" minOccurs="0"/>
+<xs:element name="endYear" type="xs:int" minOccurs="0"/>
+<xs:element name="endMonth" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -14,4 +14,6 @@
     <system systemId="http://localhost:8080/PurchaseMgtWS/PurchaseMgtWS?xsd=1" uri="src/conf/xml-resources/web-service-references/PurchaseMgtWS/wsdl/localhost_8080/PurchaseMgtWS/PurchaseMgtWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/AdditionalFeatureWS/AdditionalFeatureWS?wsdl" uri="src/conf/xml-resources/web-service-references/AdditionalFeatureWS/wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.wsdl"/>
     <system systemId="http://localhost:8080/AdditionalFeatureWS/AdditionalFeatureWS?xsd=1" uri="src/conf/xml-resources/web-service-references/AdditionalFeatureWS/wsdl/localhost_8080/AdditionalFeatureWS/AdditionalFeatureWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ReportMgtWS/ReportMgtWS?wsdl" uri="src/conf/xml-resources/web-service-references/ReportMgtWS/wsdl/localhost_8080/ReportMgtWS/ReportMgtWS.wsdl"/>
+    <system systemId="http://localhost:8080/ReportMgtWS/ReportMgtWS?xsd=1" uri="src/conf/xml-resources/web-service-references/ReportMgtWS/wsdl/localhost_8080/ReportMgtWS/ReportMgtWS.xsd_1.xsd"/>
 </catalog>

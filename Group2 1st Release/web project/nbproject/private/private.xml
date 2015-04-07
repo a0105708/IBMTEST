@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/report_product.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/report_productReportList.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/postpages/productMgt/createProductReportPost.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/login_result.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/build/generated-sources/jax-ws/wss/ReportMgtWS.java</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/category_view.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/changePassword.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/report.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/report_general.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/postpages/productMgt/viewReport.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/create_generalReport.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/postpages/productMgt/createGeneralReportPost.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/category.jsp</file>
+            <file>file:/D:/NUS/4227sec/Group2%201st%20Release/web%20project/web/admin/pages/create_productReport.jsp</file>
+        </group>
     </open-files>
 </project-private>

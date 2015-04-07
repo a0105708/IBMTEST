@@ -31,7 +31,6 @@
 
         <%
             try {
-                System.out.println("haha");
                 wss.AccountMgt_Service service = new wss.AccountMgt_Service();
                 wss.AccountMgt port = service.getAccountMgtPort();
                 // TODO initialize WS operation arguments here

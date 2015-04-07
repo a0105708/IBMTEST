@@ -8,7 +8,16 @@
         <data xmlns="http://www.netbeans.org/ns/j2ee-ejbjarproject/3">
             <name>IS4227-ejb</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
-            <included-library dirs="200">libs.javaee-api-7.0.classpath</included-library>
+            <included-library dirs="200">file.reference.javaee-api-7.0.jar</included-library>
+            <included-library dirs="200">file.reference.itext-pdfa-5.5.5-javadoc.jar</included-library>
+            <included-library dirs="200">file.reference.itext-pdfa-5.5.5-sources.jar</included-library>
+            <included-library dirs="200">file.reference.itext-pdfa-5.5.5.jar</included-library>
+            <included-library dirs="200">file.reference.itext-xtra-5.5.5-javadoc.jar</included-library>
+            <included-library dirs="200">file.reference.itext-xtra-5.5.5-sources.jar</included-library>
+            <included-library dirs="200">file.reference.itext-xtra-5.5.5.jar</included-library>
+            <included-library dirs="200">file.reference.itextpdf-5.5.5-javadoc.jar</included-library>
+            <included-library dirs="200">file.reference.itextpdf-5.5.5-sources.jar</included-library>
+            <included-library dirs="200">file.reference.itextpdf-5.5.5.jar</included-library>
             <source-roots>
                 <root id="src.dir" name="源包"/>
             </source-roots>

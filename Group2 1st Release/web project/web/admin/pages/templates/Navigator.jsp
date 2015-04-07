@@ -109,6 +109,9 @@
                                 <li>
                                     <a href="item.jsp">Items</a>
                                 </li>
+                                <li>
+                                    <a href="report.jsp">Sales Report</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

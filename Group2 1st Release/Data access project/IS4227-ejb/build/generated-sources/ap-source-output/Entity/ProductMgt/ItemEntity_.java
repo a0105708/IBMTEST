@@ -11,12 +11,13 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.1.v20130918-rNA", date="2015-04-02T22:08:42")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2015-04-07T19:21:56")
 @StaticMetamodel(ItemEntity.class)
 public class ItemEntity_ { 
 
     public static volatile ListAttribute<ItemEntity, CommentEntity> commentList;
     public static volatile SingularAttribute<ItemEntity, String> itemName;
+    public static volatile SingularAttribute<ItemEntity, Double> cost;
     public static volatile SingularAttribute<ItemEntity, ItemPurchasedEntity> itemPurchased;
     public static volatile SingularAttribute<ItemEntity, String> vitage;
     public static volatile SingularAttribute<ItemEntity, Calendar> expiringDate;

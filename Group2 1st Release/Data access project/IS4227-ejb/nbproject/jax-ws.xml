@@ -28,6 +28,9 @@
     <service name="AdditionalFeatureWS">
       <implementation-class>WSS.AdditionalFeatureWS</implementation-class>
     </service>
+    <service name="ReportMgtWS">
+      <implementation-class>WSS.ReportMgtWS</implementation-class>
+    </service>
   </services>
   <clients>
   </clients>
